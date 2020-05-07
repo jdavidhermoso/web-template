@@ -1,0 +1,14 @@
+@import 'colors';
+
+.btn {
+  display: inline-block;
+  background-color: $primary;
+  text-transform: uppercase;
+  color: white;
+  font-size: .8em;
+  padding: .8em 1em;
+  border-radius: .3em;
+  margin-top: 1.5em;
+  cursor: pointer;
+  letter-spacing: .1em;
+}

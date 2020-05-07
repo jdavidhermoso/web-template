@@ -11,6 +11,11 @@ body {
   color: $text-dark;
 }
 
+.section-title {
+  text-align: center;
+  font-size: 1.8em;
+}
+
 main {
   padding-top: $header-heigth;
   @include wrapper();
@@ -18,4 +23,61 @@ main {
 
 .claim {
   font-size: 2.5em;
+  margin: 1em 0;
+}
+
+.cta__link {
+  color: $primary;
+
+  &:hover {
+    color: $text-dark;
+    transition: color 0.4s ease;
+  }
+}
+
+/** PORTFOLIO **/
+#portfolio {
+  background-color: $bg-gray;
+  padding: 2em 0;
+
+  .description-container {
+    padding: 1.5em 0 2.5em;
+    line-height: 1.5em;
+  }
+
+  .project {
+    background-color: white;
+
+    .title {
+      font-size: 1.4em;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+/** ABOUT **/
+
+#about {
+  font-size: .9em;
+
+  .section-title {
+    margin: 3em 0 1em;
+  }
+
+  .name {
+    color: $text-dark;
+    margin: 1.4em 0;
+    padding-bottom: 1em;
+    position: relative;
+
+    &::after {
+      content: '';
+      height: 2px;
+      width: 2em;
+      background-color: $primary;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
 }
