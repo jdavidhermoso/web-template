@@ -1,0 +1,65 @@
+@import "utils";
+@import "colors";
+
+header#main-header {
+  height: $header-heigth;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+
+  .logo {
+    background-color: $primary;
+    height: 100%;
+    display: inline-block;
+    font-family: $serif;
+    line-height: $header-heigth;
+    font-size: 1.2em;
+    padding: 0 1em;
+  }
+}
+
+#menu-handler {
+  font-size: 2em;
+  padding: 0 0.5em;
+  height: 100%;
+  line-height: $header-heigth;
+  float: right;
+  cursor: pointer;
+  color: $text-dark;
+
+  &.open {
+    .menu__handler-open {
+      display: none;
+    }
+  }
+
+  &:not(.open) {
+    .menu__handler-close {
+      display: none;
+    }
+  }
+}
+
+nav {
+  background-color: #fff;
+  text-transform: uppercase;
+  color: $text-light;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  width: 100%;
+  max-width: 0;
+  overflow: hidden;
+  transition: max-width .4s ease;
+  height: 100vh;
+  position: absolute;
+  top: $header-heigth;
+
+
+  &.displayed {
+    max-width: 100%;
+  }
+
+  a {
+    display: block;
+    padding: 1em;
+  }
+}

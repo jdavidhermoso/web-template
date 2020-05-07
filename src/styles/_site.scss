@@ -1,0 +1,21 @@
+@import "utils";
+@import "colors";
+
+body {
+  color: $text-light;
+  font-family: $serif;
+}
+
+.title, .section-title {
+  font-family: $serif;
+  color: $text-dark;
+}
+
+main {
+  padding-top: $header-heigth;
+  @include wrapper();
+}
+
+.claim {
+  font-size: 2.5em;
+}

@@ -1,0 +1,17 @@
+/** SIZES **/
+$header-heigth: 5rem;
+
+
+/****************** MIXINS ******************/
+@mixin wrapper($width: 90%, $max-width: none) {
+  width: $width;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@function rem($size, $base: 16) {
+  $remSize: $size / $base;
+  @return #{$remSize}rem;
+}
+
